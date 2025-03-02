@@ -7,12 +7,11 @@ public abstract class Book {
     int copies;
     int borrowed;
 
-    public Book(String title, String author,int pages,int copies, int borrowed){
+    public Book(String title, String author,int pages,int copies){
         this.title = title;
         this.author = author;
         this.pages = pages;
         this.copies = copies;
-        this.borrowed = borrowed;
     }
 
     public void displayInfo(){

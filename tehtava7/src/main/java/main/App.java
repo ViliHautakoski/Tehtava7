@@ -40,10 +40,12 @@ public class App
                         if(j == 1){
                             FictionBook fictionbook = new FictionBook(titel, author, pages, copies, 0);
                             library.addBook(fictionbook);
+                            System.out.println("Kirja lisätty kirjastoon!");
                         }
                         else if(j == 2){
                             NonFictionBook nonfictionbook = new NonFictionBook(titel, author, pages, copies, 0);
                             library.addBook(nonfictionbook);
+                            System.out.println("Kirja lisätty kirjastoon!");
                         }
                         else{
                             System.out.println("Virheellinen kirjatyyppi.");
@@ -62,7 +64,7 @@ public class App
                             }
 
                             else{
-                                System.out.println("Höh");
+                                System.out.println("Kirjaa ei löytynyt tai sitä ei voi lainata.");
                             }
                         }
                         break;
