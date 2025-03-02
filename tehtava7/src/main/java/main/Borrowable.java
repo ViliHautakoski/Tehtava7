@@ -1,6 +1,6 @@
 package main;
 
-public interface borrowable {
+public interface Borrowable{
     
     public void borrow(String bookname);
 

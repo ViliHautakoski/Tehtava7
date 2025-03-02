@@ -1,6 +1,6 @@
 package main;
 
-public class FictionBook extends Book implements borrowable {
+public class FictionBook extends Book implements Borrowable {
     
     public FictionBook(String title, String author,int pages,int copies){
         super(title, author, pages, copies);
