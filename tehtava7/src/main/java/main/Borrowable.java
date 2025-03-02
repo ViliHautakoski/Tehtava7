@@ -2,7 +2,7 @@ package main;
 
 public interface Borrowable {
 
-    void borrow(String bookname);
+    public void borrow(String bookname);
 
-    void returnBook(String bookname);
+    public void returnBook(String bookname);
 } 

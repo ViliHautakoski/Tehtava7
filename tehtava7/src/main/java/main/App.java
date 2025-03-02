@@ -38,12 +38,12 @@ public class App
                         System.out.println("Anna kirjojen määrä:");
                         int copies = Integer.parseInt(sc.nextLine());
                         if(j == 1){
-                            FictionBook fictionbook = new FictionBook(titel, author, pages, copies);
+                            FictionBook fictionbook = new FictionBook(titel, author, pages, copies, 0);
                             library.addBook(fictionbook);
                             System.out.println("Kirja lisätty kirjastoon!");
                         }
                         else if(j == 2){
-                            NonFictionBook nonfictionbook = new NonFictionBook(titel, author, pages, copies);
+                            NonFictionBook nonfictionbook = new NonFictionBook(titel, author, pages, copies, 0);
                             library.addBook(nonfictionbook);
                             System.out.println("Kirja lisätty kirjastoon!");
                         }
