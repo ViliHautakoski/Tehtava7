@@ -38,12 +38,12 @@ public class App
                         System.out.println("Anna kirjojen määrä:");
                         int copies = Integer.parseInt(sc.nextLine());
                         if(j == 1){
-                            FictionBook fictionbook = new FictionBook(titel, author, pages, copies, 0);
+                            FictionBook fictionbook = new FictionBook(titel, author, pages, copies);
                             library.addBook(fictionbook);
                             System.out.println("Kirja lisätty kirjastoon!");
                         }
                         else if(j == 2){
-                            NonFictionBook nonfictionbook = new NonFictionBook(titel, author, pages, copies, 0);
+                            NonFictionBook nonfictionbook = new NonFictionBook(titel, author, pages, copies);
                             library.addBook(nonfictionbook);
                             System.out.println("Kirja lisätty kirjastoon!");
                         }
@@ -61,10 +61,6 @@ public class App
                         for(Book k : books){
                             if(k instanceof FictionBook && k.title.equals(bookname)){
                                 ((Borrowable)k).borrow(bookname);
-                            }
-
-                            else if(k instanceof NonFictionBook){
-                                System.out.println("Kirjaa ei löytynyt tai sitä ei voi lainata.");
                             }
                         }
                         break;
