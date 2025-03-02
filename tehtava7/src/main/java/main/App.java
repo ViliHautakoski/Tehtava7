@@ -63,7 +63,7 @@ public class App
                                 ((Borrowable)k).borrow(bookname);
                             }
 
-                            else{
+                            else if(k instanceof NonFictionBook){
                                 System.out.println("Kirjaa ei löytynyt tai sitä ei voi lainata.");
                             }
                         }

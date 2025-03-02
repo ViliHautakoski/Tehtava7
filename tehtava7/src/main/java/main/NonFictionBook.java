@@ -4,7 +4,7 @@ public class NonFictionBook extends Book {
     
     public NonFictionBook(String title, String author,int pages,int copies, int borrowed){
         super(title, author, pages, copies);
-        this.borrowed = borrowed;
+        this.borrowed = 0;
     }
     public String categorize(){
         return "Tietokirja";
