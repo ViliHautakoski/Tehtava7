@@ -3,8 +3,8 @@ package main;
 public class FictionBook extends Book implements Borrowable {
     
     public FictionBook(String title, String author,int pages,int copies, int borrowed){
-        super(title, author, pages, copies);
-        this.borrowed = 0;
+        super(title, author, pages, copies, borrowed);
+        
     }
 
     public String categorize(){
@@ -20,7 +20,7 @@ public class FictionBook extends Book implements Borrowable {
         }
         
         else{    
-            System.out.println("Kirja "+bookname+" ei enään ole lainattavissa!");
+            System.out.println("Kirjaa "+bookname+" ei enään ole lainattavissa!");
         } 
   }
 
