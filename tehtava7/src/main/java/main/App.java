@@ -60,7 +60,7 @@ public class App
                         ArrayList<Book> books = library.getBooks();
                         for(Book k : books){
                             if(k instanceof FictionBook && k.title.equals(bookname)){
-                                ((Borrowable)k).borrow(bookname);
+                                ((borrowable)k).borrow(bookname);
                             }
                         }
                         break;
@@ -70,7 +70,7 @@ public class App
                         ArrayList<Book> returnbook = library.getBooks();
                         for(Book l : returnbook){
                             if(l instanceof FictionBook && l.title.equals(returnbookname)){
-                                ((Borrowable)l).returnBook(returnbookname);
+                                ((borrowable)l).returnBook(returnbookname);
                                 }
                             }
                         break;

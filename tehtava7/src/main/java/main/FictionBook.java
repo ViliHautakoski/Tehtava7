@@ -1,6 +1,6 @@
 package main;
 
-public class FictionBook extends Book implements Borrowable {
+public class FictionBook extends Book implements borrowable {
     
     public FictionBook(String title, String author,int pages,int copies){
         super(title, author, pages, copies);
@@ -13,7 +13,7 @@ public class FictionBook extends Book implements Borrowable {
     }
 
 
-    public void borrow(String bookname){
+        void borrow(String bookname){
         if(copies>0){
             System.out.println("Kirja "+bookname+" on nyt lainattu.");
             copies -= 1;
@@ -25,7 +25,7 @@ public class FictionBook extends Book implements Borrowable {
         } 
   }
 
-    public void returnBook(String bookname){
+        void returnBook(String bookname){
         if(borrowed>0){
             System.out.println("Kirja "+bookname+" on palautettu.");
             copies +=1;
