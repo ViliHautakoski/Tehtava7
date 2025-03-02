@@ -62,6 +62,10 @@ public class App
                             if(k instanceof FictionBook && k.title.equals(bookname)){
                                 ((Borrowable)k).borrow(bookname);
                             }
+                            else if(k instanceof FictionBook && k.title.equals(bookname)){
+                                System.out.println("Kirjaa ei löytynyt tai sitä ei voi lainata.");
+                            }
+
                         }
                         break;
                     case 4:
