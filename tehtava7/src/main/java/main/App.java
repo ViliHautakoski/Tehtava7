@@ -62,7 +62,7 @@ public class App
                             if(k instanceof FictionBook && k.title.equals(bookname)){
                                 ((Borrowable)k).borrow(bookname);
                             }
-                            else if(k instanceof FictionBook && k.title.equals(bookname)){
+                            else if(k instanceof NonFictionBook && k.title.equals(bookname)){
                                 System.out.println("Kirjaa ei löytynyt tai sitä ei voi lainata.");
                             }
 
@@ -73,7 +73,7 @@ public class App
                         String returnbookname = sc.nextLine();
                         ArrayList<Book> returnbook = library.getBooks();
                         for(Book l : returnbook){
-                            if(l instanceof FictionBook && l.title.equals(returnbookname)){
+                            if(l instanceof FictionBook && !l.title.equals(returnbookname)){
                                 ((Borrowable)l).returnBook(returnbookname);
                                 }
                             }
