@@ -13,7 +13,7 @@ public class FictionBook extends Book implements borrowable {
     }
 
 
-        void borrow(String bookname){
+        public void borrow(String bookname){
         if(copies>0){
             System.out.println("Kirja "+bookname+" on nyt lainattu.");
             copies -= 1;
@@ -25,7 +25,7 @@ public class FictionBook extends Book implements borrowable {
         } 
   }
 
-        void returnBook(String bookname){
+        public void returnBook(String bookname){
         if(borrowed>0){
             System.out.println("Kirja "+bookname+" on palautettu.");
             copies +=1;
