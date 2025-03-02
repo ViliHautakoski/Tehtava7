@@ -28,6 +28,7 @@ public class FictionBook extends Book implements Borrowable {
         if(borrowed>0){
             System.out.println("Kirja "+bookname+" on palautettu.");
             copies +=1;
+            borrowed -= 1;
         }
         else{
             System.out.println("Kirja "+bookname+" ei ole lainassa.");
