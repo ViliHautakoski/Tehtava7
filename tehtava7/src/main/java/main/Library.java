@@ -3,7 +3,11 @@ package main;
 import java.util.ArrayList;
 
 public class Library {
-    private ArrayList<Book> booklist = new ArrayList<>();
+    private ArrayList<Book> booklist;
+
+    public Library(){
+        this.booklist = new ArrayList<>();
+    }
 
     public void addBook(Book book){
         booklist.add(book);
